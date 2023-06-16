@@ -1,5 +1,5 @@
 
-<% var a=0; %> 
+
    
 <header>
   <h1 class="logo" onclick="window.location.href='/'">MEDIEASE</h1>
@@ -22,14 +22,9 @@
             <% } else {%>
             <li><a href="/certificates">My Documents</a></li>
             <li><a href="/logout">LOGOUT</a></li>
-            <% for(let profile of profiles) { %>
-            <% a++; %> 
-            <li><a href='/profiles/<%=profile._id%>'>Profile</a></li>
+            
             <% } %>
-            <% } %>
-            <% if(a==0) {%> 
-            <li><a href="/profiles/new">Add Profile</a></li>  
-        <% } %> 
+            
 
       </ul>
     </nav>
